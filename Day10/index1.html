@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        background-color: black;
+        height: 95vh;
+        border-radius: 20px;
+        margin: 15px;
+        border: 5px solid rgb(142, 113, 245);
+        
+    }
+    .voice{
+        text-align: end;
+        padding: 10px;
+    }
+    .voice img{
+        width: 40px;
+        border-radius: 50%;
+    }
+    .circleparent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       height: 78vh;
+    }
+    .circle{
+        background-color: green;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .circletext h1{
+        font-size: 100px;
+        color: white;
+    }
+    .divtext{
+        height: 3vh;
+        padding: 15px;
+    }
+    .divtext h2{
+        color: white;
+    }
+</style>
+<body>
+    <div class="parent">
+
+        <div class="voice"><img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div class="circleparent">
+            <div class="circle">
+                <div class="circletext">
+                    <h1>R</h1>
+                </div>
+            </div>
+        </div>
+        <div class="divtext">
+            <h2>REGex Softwere</h2>
+        </div>
+    </div>
+</body>
+</html>
