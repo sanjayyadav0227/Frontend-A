@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-screen grid grid-cols-2 mx-40 text-lg font-medium">
+        <div class=""><img class=" h-[100vh]" src="https://programmingtrick.com/html-assignment/doc.png" alt="img"></div>
+        <div class=" flex flex-col  px-5">
+            <h1 class="font-bold text-4xl p-5 text-center ">Doctor Appointment Form</h1>
+            <hr class=" border-orange-500 border-1 ">
+            <form action="">
+                <div class="flex items-center  mt-8">
+                    <label class="w-30 mr-5" for="">Appointment Date</label>
+                    <input class="border h-6 rounded" type="date">
+                </div>
+
+                <div class="flex items-center mt-6">
+                    <label class="w-30 mr-5" for="">Appointment Time</label>
+                    <input class="border h-6 rounded" type="time">
+                </div>
+
+                <div class="flex  mt-6">
+                    <label class="w-30 mr-5" for="name">Name</label>
+                    <input class="border rounded pl-2 mr-6" type="text" placeholder="First">
+                    <input class="border rounded pl-2" type="text" placeholder="Last">
+                </div>
+
+                <div class="flex  mt-6">
+                    <label class="w-30 mr-5" for="gender">Gender</label>
+                    <label class="mr-3" for="male">Male</label>
+                    <input type="radio" name="" id="">
+                    <label class="mr-3" for="female">female</label>
+                    <input type="radio" name="" id="">
+                </div>
+
+                <div class="flex  mt-6">
+                    <label class="w-30 mr-5 " for="Phone">Phone</label>
+                    <input class="border rounded pl-2" type="number" placeholder="####">
+                </div>
+                
+                <div class="flex  mt-6">
+                    <label class="w-30 mr-5" for="address">Address</label>
+                    <input class="border rounded mr-6 pl-2" type="text" placeholder="city">
+                    <input class="border rounded pl-2" type="text" placeholder="state">
+                </div>
+                
+
+                <div class="flex  mt-6">
+                    <label class="w-30 mr-5" for="query">Your Query</label>
+                    <textarea class="border " name="" id="" cols="50" rows="3"></textarea>
+                </div>
+
+                <div class="flex mt-6">
+                
+                         <div class="w-30 mr-5">
+                            <label class=" " for="appointmentType">Appointment Type</label>
+                         </div>
+                         <div>
+                            <label for="">Select which appointment type(s) you require</label><br>
+                <input type="checkbox">
+                <label for="">Cervix checkup</label><br>
+                <input type="checkbox">
+                <label for="">Heart checkup</label><br>
+                <input type="checkbox">
+                <label for="">Eye check-up</label><br>
+                <input type="checkbox">
+                <label for="">Hearing Test</label><br><br>
+                <input class="border rounded px-2" type="submit">
+                         </div>
+
+                    
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

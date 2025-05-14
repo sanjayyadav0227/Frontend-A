@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/023/986/494/non_2x/spotify-logo-spotify-logo-transparent-spotify-icon-transparent-free-free-png.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="bg-black h-screen flex flex-col">
+        <div class="h-14 flex gap-2 mx-3">
+            <!-- //logo -->
+            <div class="w-60 h-15 flex items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt=""
+                class="w-8 h-8 mt-2 ml-2">
+            </div>
+            <!-- //search -->
+            <div class="flex-1 flex justify-end items-center gap-4 pr-5 h-15">
+                <i class="fa-solid fa-house text-white bg-[#121212] rounded-full p-3 "></i>
+                <span class="bg-[#121212] text-white border-none p-2 w-100 rounded-full flex flex-row gap-5 items-center justify-evenly px-5 border ">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <input type="text" placeholder="What do you want to play?"
+                    class="w-75 text-white focus:outline-none focus:ring-0 ">
+                    <i class="fa-solid fa-folder"></i>
+
+                </span>
+            </div>
+            <!-- //profile -->
+            <div class="w-100 flex  items-center gap-4">
+                <button class="bg-white font-bold px-5 py-1 rounded-full">Explore premium</button>
+                <button class="text-white"><i class="fa-regular fa-circle-down "></i> Install app</button>
+                <i class="fa-regular fa-bell text-white"></i>
+                <i class="fa-regular fa-circle-user text-white"></i>
+                <span class="bg-pink-500 font-bold p-2 px-4 rounded-full">S</span>
+            </div>
+        </div>
+    <div class="flex-1  flex gap-2 m-2">
+
+
+        <!-- //side-1 -->
+        <div class="bg-[#121212] rounded-xl">
+
+
+            <!-- //your library -->
+            <div class=" mb-3 mt-2 h-10  flex justify-evenly items-center px-2">
+                <h1 class="text-white font-bold w-30">Your library</h1>
+                <div  class="bg-[#2a2a2a] p-2 w-30 rounded-full  text-center">
+                    <button class=" text-white"><i class="fa-solid fa-plus  mr-3"></i> Create</button>
+                </div>
+                <div>
+                    <button class="hover:bg-[#2a2a2a] hover:cursor-pointer p-2 px-3 rounded-full"><i class="fa-solid fa-up-right-and-down-left-from-center text-white"></i></button>
+                </div>
+                <div></div>
+                
+            </div>
+
+
+            <!-- //Playlist -->
+            <div class=" flex mb-5 h-10 px-3 gap-2">
+                <div class="bg-[#2a2a2a] p-2  w-20 rounded-full text-center">
+                    <button class=" text-white">Playlist</button>
+                </div>
+                <div class="bg-[#2a2a2a] p-2 w-20 rounded-full text-center ">
+                    <button class=" text-white">Artists</button>
+                </div>
+            </div>
+
+
+            <!-- //song list -->
+            <div class=" overflow-y-scroll  h-96 ">
+
+
+                <!-- //side search -->
+            <div class="mx-3 mb-3 flex justify-between ">
+                <div class="flex items-center h-10 w-10 hover:bg-[#2a2a2a] hover:cursor-pointer p-2 px-3 rounded-full"><i class="fa-solid fa-magnifying-glass text-white "></i>
+                </div>
+                <div class="text-white flex items-center gap-2">
+                    <p>Recent</p><i class="fa fa-list"></i>
+                </div>
+            </div>
+
+
+            <!-- //song -->
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2024/10/taylor-swift-hub.jpg?resize=720%2C780" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Taylor Swift</h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://play-lh.googleusercontent.com/VoRIt2HlY1leETa_0MhUL1ZT1GVUYDzFeZvF7ow6ShraHQ6And2b2nCAL7kfmkpvxugU=w240-h480-rw" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Drake </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://wallpapercat.com/w/full/1/4/8/193531-2000x3000-samsung-hd-the-weeknd-background.jpg" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">The Weeknd </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://w0.peakpx.com/wallpaper/90/977/HD-wallpaper-future-interesante-neon.jpg" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Future </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TnKo5lZtOTF-LmAWOaBoeNhMEuhy9OESaA&s" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Bad Bunny </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUZ0Mq3zLmYO3AbGbExT8iZMmMNxAc222kA&s" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Metro Boomin </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/904/531/627/ariana-grande-4k-computer-desktop-wallpaper-preview.jpg" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Ariana Grande </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://images7.alphacoders.com/125/1251615.jpg" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Travis Scott </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://w0.peakpx.com/wallpaper/197/795/HD-wallpaper-post-malone-cantor-musica.jpg" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Post Malone </h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             <div class="mx-3 px-3 flex items-center gap-7 hover:bg-[#2a2a2a] w-82 h-15 rounded-sm text-white">
+                <div class="h-12 w-12 border rounded-full overflow-hidden border-none">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcEY4z9Xq64FBHwXjwP5sZpFQAHbvhms8J2BVjxNH3_o_9x_RigxHfsFHID6k2gh2_DSQ&usqp=CAU" alt="image" class="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-base">Taylor Swift</h1>
+                    <p>Artist</p>
+                </div>
+             </div>
+
+             
+
+            </div>
+
+        </div>
+
+
+        <!-- //side-2 -->
+        <div class="flex-1  bg-[#121212] rounded-xl px-6 py-2">
+            
+            <div class="flex h-13 items-center text-white gap-4">
+                <button class="px-4 py-2 bg-[#2a2a2a] border border-none rounded-full">All</button>
+                <button class="px-4 py-2 bg-[#2a2a2a] border border-none rounded-full">Music</button>
+                <button class="px-4 py-2 bg-[#2a2a2a] border border-none rounded-full">Podcasts</button>
+            </div>
+            <!-- //side -2 scroll -->
+            <div class=" h-111 overflow-y-scroll">
+                <h1 class="text-2xl font-bold text-white mt-3 hover:underline">Featured Charts</h1>
+            <!-- //side-2-songs box -->
+            <div class="mt-6 flex gap-5 flex-wrap">
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgpQdxZ5ut12os4NG3ONhADcQryJC_Xl_uA&s" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Hottest tracks from your favourite I-Pop Icons. Cover- Badshah</p>
+                    </div>
+                </div>
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJ8TsVIiPTV1pZMuAmqrosK6UtHMZSO_NYA&s" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Catch all the top Haryanvi hits. Cover: Masoom Sharma</p>
+                    </div>
+                </div>
+
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%281%29.png/250px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%281%29.png" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">American singer-songwriter Taylor Swift is the most-streamed artist in Spotify's history.</p>
+                    </div>
+                </div>
+
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/250px-Drake_July_2016.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Canadian rapper Drake is the most-streamed male artist in Spotify's history.</p>
+                    </div>
+                </div>
+
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg/250px-%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">South Korean boy band BTS is the most-streamed group in Spotify's history.</p>
+                    </div>
+                </div>
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bad_Bunny_2019_by_Glenn_Francis_%28cropped%29.jpg/250px-Bad_Bunny_2019_by_Glenn_Francis_%28cropped%29.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Canadian rapper Drake is the most-streamed male artist in Spotify's history.</p>
+                    </div>
+                </div>
+
+                	<div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Arijit_5th_GiMA_Awards.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Indian playback singer Arijit Singh is the most-followed artist on Spotify.</p>
+                    </div>
+                </div>
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg/800px-BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">American singer-songwriter Bruno Mars is the artist with the highest recorded number of monthly listeners.</p>
+                    </div>
+                </div>
+
+
+                <div class=" hover:bg-[#2a2a2a] relative h-65 w-50 border overflow-hidden rounded-xl p-3 border-none">
+                    
+                    <div class=" h-40 bg-black border rounded-sm overflow-hidden border-none ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/380px-Ed_Sheeran-6886_%28cropped%29.jpg" alt="">
+                        <div class=" absolute right-5 bottom-25 h-12 w-12 flex justify-center items-center border rounded-full border-none bg-green-500">
+                            <i class="fa-solid fa-play text-2xl pl-1"></i>
+                        </div>
+                    </div>
+                    <div class=" text-wrap ">
+                        
+                        <p class=" font-medium text-gray-400">Edward Christopher Sheeran is an English singer-songwriter. </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+        <!-- //side-3 -->
+        <div class="px-3 w-62 bg-[#121212] rounded-xl">
+             <h1 class="text-white font-bold w-30 my-5">Singer</h1>
+            <img src="https://images.unsplash.com/photo-1530189873666-a792be008b5b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNpbmdlciUyMGhvcml6b250YWwlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="border rounded-sm">
+        </div>
+    </div>
+
+    <!-- // footer -->
+    <div class="h-15 bg-[#121212] px-4 flex items-center justify-between ">
+        <!-- //footer first -->
+        <div class="flex items-center gap-4">
+            <div class="h-10 w-10 bg-green-500 overflow-hidden rounded-sm">
+               
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJ8TsVIiPTV1pZMuAmqrosK6UtHMZSO_NYA&s" alt="">
+            </div>
+            <div class="text-white">
+                <p class="text-sm font-bold">Tokani</p>
+                <p class="text-base font-medium">Mashum Sharma</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-plus text-white border-[2px] p-[1px] rounded-full text-sm"></i>
+            </div>
+        </div>
+
+        <!-- //footer second -->
+        <div >
+            <div class="flex items-center justify-center space-x-3">
+                <button class="text-white hover:text-gray-400"><i class="fas fa-random"></i></button>
+                <button class="text-white hover:text-gray-400"><i class="fas fa-backward"></i></button>
+                <button class="text-white hover:text-gray-400">
+                    <i class="fas fa-play pl-1"></i>
+                </button>
+                <button class="text-white hover:text-gray-400"><i class="fas fa-forward"></i></button>
+                <button class="text-white hover:text-gray-400"><i class="fas fa-repeat"></i></button>
+            </div>
+            <div class="flex items-center space-x-3">
+                <p class="text-white">0.26</p>
+                <div class="w-100 h-1 bg-gray-700 rounded-full relative">
+                    <div class="absolute top-0 left-0 h-1 bg-white rounded-full" style="width: 20%;"></div>
+                </div>
+                <p class="text-white">2.36</p>
+            </div>
+        </div>
+
+        <!-- //footer third -->
+        <div>
+            <div class="flex items-center space-x-3">
+                <!-- <button class="text-green-500"><i class="fas fa-square"></i></button> -->
+                <button class="text-white"><i class="fas fa-pen"></i></button>
+                <button class="text-white"><i class="fas fa-list"></i></button>
+                <button class="text-white"><i class="fas fa-volume-up"></i></button>
+                <div class="w-20 h-1 bg-gray-700 rounded-full relative">
+                    <div class="absolute top-0 left-0 h-1 bg-white rounded-full" style="width: 80%;"></div>
+                </div>
+                <button class="text-white"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+</body>
+</html>
